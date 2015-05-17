@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ultrapowa Clash Server</title>
+
+	<link rel="shortcut icon" href="http://www.ultrapowa.com/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="http://www.ultrapowa.com/img/favicon.ico" type="image/x-icon">
+	
+    <!-- Bootstrap -->
+    <link href="http://www.ultrapowa.com/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+			$('#ucs_download').on('click', function() {
+			  ga('send', 'event', 'outbound', 'click', 'UCS Download 0.5.0.1');
+			});
+		});
+	</script>
+  </head>
+  <body>
+
+    <div class="container" style="margin-top:50px;">
+	
+
+	<div class="jumbotron" style="background-image: url(http://www.ultrapowa.com/img/red2.jpg); background-size: 100%; background-position:0% 60%;">
+		<div class="row">
+			<div class="col-xs-9">
+				<h1 style="color:#F2F5A9">Ultrapowa Clash Server</h1>
+				<p style="color:#fff">UCS is a server emulator for the famous game Clash of Clans.
+				<br/> Download UCS now and start hosting your private CoC server for free!
+				<p><a class="btn btn-lg btn-danger" href="http://www.ultrapowa.com/forum" role="button">Access forum for documentation & support</a></p>
+			</div>
+			<div class="col-xs-3"><img src="http://www.ultrapowa.com/img/pekka.png" class="img-responsive"></div>
+		</div>
+	</div>
+
+	<!-- Example row of columns -->
+	<div class="row">
+		<div class="col-xs-12">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- ultraresp -->
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-7960310510145313"
+				 data-ad-slot="5277819185"
+				 data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	</div>
+	
+	<div class="row" style="margin-top:20px;">
+		<div class="col-xs-6">
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="text-right">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="HA9HTZ4S8PG6N">
+				<button type="submit" class="btn btn-lg btn-success" >Donate with PayPal <span class="glyphicon glyphicon-heart"></span></button>
+			</form>
+		</div>
+		<div class="col-xs-6">
+			<a class="btn btn-lg btn-danger" id= "ucs_download" href="http://filesrightnow.com/file/05noa" role="button">Download UCS 0.5.0.1 <span class="glyphicon glyphicon-download-alt"></span></a>
+		</div>
+	</div>
+	
+	<div class="row" style="margin-top:20px;">
+		<div class="col-xs-5">
+			<div>
+			 <h3>Youtube Channel</h3>
+			 <hr>
+				<div class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" src="http://www.youtube.com/v/S2uQZPN5TJo" allowfullscreen></iframe>
+				</div>
+				<br/>
+				<div class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" src="http://www.youtube.com/v/RqFQZ80Drrc" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-7">
+			<h3>Server Releases</h3>
+			<hr>
+			<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0501">
+					  Version 0.5.0.1 <small>05/03/2015</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0501" class="panel-collapse collapse in">
+					<div class="panel-body">
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>UCS is now compatible with CoC 7.65</li>
+								<li>Server owners can now disable debug logs for a better stability</li>
+							</ul>
+							<h5 class="text-danger">Version 0.5.0.1 is not compatible with 0.5.0.0 data. Database must be emptied first!</h5>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0500">
+					  Version 0.5.0.0 <small>03/08/2015</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0500" class="panel-collapse collapse">
+					<div class="panel-body">
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>UCS is now compatible with CoC 7.1, crypto credits to handroid and clanner</li>
+								<li>GameOp commands are now available (rename, shutdown, kick, set privileges, ban, unban, visit)!</li>
+								<li>Some PvP features are now enabled!</li>
+								<li>Server maintenance mode is now available (message displayed on connection)</li>
+								<li>GameOps now see players id in global chat</li>
+								<li>Server now checks CoC version of clients before accepting connections</li>
+							</ul>
+							<h5 class="text-danger">Version 0.5.0.0 is not compatible with 0.4.3.4 data. Database must be emptied first!</h5>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0434">
+					  Version 0.4.3.4 <small>01/25/2015</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0434" class="panel-collapse collapse">
+					<div class="panel-body">
+							<h5 class="text-success">Fixed issues</h5>
+							<ul>
+								<li>Walls can now be upgraded with alt resource (elixir)</li>
+								<li>Upgrading a line of walls having different levels  no longer causes errors</li>
+								<li>Global performance issues and repetitive crashes on big UCS servers have been fixed</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>Troops used in combat are now properly consumed</li>
+								<li>Spells used in combat are now properly consumed</li>
+								<li>UTF8 characters are now supported (switched from ASCII encoding)</li>
+								<li>It is now possible to customize the default base layout</li>
+								<li><strong>Players can now visit other players bases</strong></li>
+							</ul>
+							<h5 class="text-danger">Version 0.4.3.4 is not compatible with 0.4.3.3 data. Database must be emptied first!</h5>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0433">
+					  Version 0.4.3.3 <small>12/21/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0433" class="panel-collapse collapse">
+					<div class="panel-body">
+							<h5 class="text-success">Fixed issues</h5>
+							<ul>
+								<li>Troops can now be properly upgraded (0.4.3.2 bug)</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>Spells are now available!</li>
+								<li>Decos are now available!</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Clan features have been disabled due to recent CoC update and will be fixed soon</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0432">
+					  Version 0.4.3.2 <small>12/20/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0432" class="panel-collapse collapse">
+					<div class="panel-body">
+							<h5 class="text-success">Fixed issues</h5>
+							<ul>
+								<li>UCS is now compatible with last CoC version (6.407), special thanks to handroid for his work</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>Trained troops can now be removed</li>
+								<li>Heroes are now properly upgraded and saved</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Clan features have been disabled due to recent CoC update and will be fixed soon</li>
+								<li>Spells are not working yet</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0431">
+					  Version 0.4.3.1 <small>12/06/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0431" class="panel-collapse collapse">
+					<div class="panel-body">
+							<h5 class="text-success">Fixed issues</h5>
+							<ul>
+								<li>PvE beta is back and fixed</li>
+								<li>Game files (.csv) have been upgraded, it should fix custom patching issues</li>
+								<li>Clan castle can now be properly upgraded</li>
+								<li>Traps have been fixed and now properly save</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>Troops upgrades are now properly saved</li>
+								<li>Troops can now be trained (still a bit buggy)</li>
+								<li>Troops can be stored in firecamps (beware, you can't remove them at the moment)</li>
+								<li>Custom troops can be used to fight goblin maps</li>
+								<li>More code rework has been done</li>
+								<li>Each server restart now generates a new ucslog file in "logs" folder</li>
+								<li>Player actions are now logged in a debug log</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Clan features have been disabled due to recent CoC update and will be fixed soon</li>
+								<li>Heroes and spells upgrades are not saved yet</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0420">
+					  Version 0.4.2.0 <small>11/16/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0420" class="panel-collapse collapse">
+					<div class="panel-body">
+							<h5 class="text-success">Fixed issues</h5>
+							<ul>
+								<li>Constructing worker buildings no longer prevent UCS from saving player's data</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>UCS now supports latest Clash of Clans version (6.322)</li>
+								<li>Client version check (in order to force update) is now optional</li>
+								<li>Server code has been fully reworked to support future updates</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Clan features have been disabled due to recent CoC update and will be fixed soon</li>
+								<li>Troops, heroes, and spells upgrades are not saved</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0412">
+					  Version 0.4.1.2 <small>10/14/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0412" class="panel-collapse collapse">
+					<div class="panel-body">
+							<h5 class="text-success">Fixed issues</h5>
+							<ul>
+								<li>Memory leaks related to database connections have been fixed</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li><strong>MySql database is now supported!</strong></li>
+								<li>Multiple features have been reworked to prepare PvE for the next version</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Troops, heroes, and spells upgrades are not saved</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0410">
+					  Version 0.4.1 <small>10/05/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0410" class="panel-collapse collapse">
+					<div class="panel-body">
+							<h5 class="text-success">Fixed issues</h5>
+							<ul>
+								<li>Major "login failed" error preventing user connection is fixed</li>
+								<li>Buildings no longer duplicate when players don't have enough resources to build</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>Construction time is properly managed when building/upgrading village</li>
+								<li>Client game graphics can be replaced with custom content</li>
+								<li>Improved static game content management (csv files data)</li>
+								<li>Traps are now properly upgraded and saved</li>
+								<li>It is now possible to upgrade rows of walls</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Troops, heroes, and spells upgrades are not saved</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0400">
+					  Version 0.4.0 <small>09/05/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0400" class="panel-collapse collapse">
+					<div class="panel-body">
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li><strong>Introducing game saving!</strong></li>
+								<li>Server now saves building moves</li>
+								<li>Server now saves building constructions</li>
+								<li>Server now saves building upgrades</li>
+								<li>Initial resources values on village creation can now be set in a config file</li>
+								<li>Game content is dynamically loaded in server memory from server csv files</li>
+								<li><strong>Client automatically updates with custom content (ex: csv) built from server content files	</strong></li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Some actions (collecting resources, etc.) are still ignored by the server and not saved.</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse0310">
+					  Version 0.3.1 <small>08/30/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapse0310" class="panel-collapse collapse">
+					<div class="panel-body">
+						<h5 class="text-success">Fixed issues</h5>
+						  <ul>
+								<li>CPU usage related to thread loops has been fixed</li>
+								<li>Major connection issue related to non-Bluestacks Android devices has been fixed. It's not necessary anymore to reinstall CoC after a connection to UCS.</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li><strong>Introducing iOS compatibility! (special thanks to plynote for his help)</strong></li>
+								<li>Old unsafe code (pointers) has been removed (special thanks to rcs from cocdevteam forum)</li>
+								<li>Broadcasting has been introduced to synchronize data between players (ie. general chat messages)</li>
+								<li>Players can now join an existing clan</li>
+								<li>Players can now search for clans</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Main game actions (collecting resources, moving buildings, etc.) are still ignored by the server and not saved. However, server architecture being now ready, next versions will be focused on that part.</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					  Version 0.3 <small>08/22/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse">
+					<div class="panel-body">
+						<h5 class="text-success">Fixed issues</h5>
+						  <ul>
+								<li>Login failed error has been fixed. You should now be able to login without completing game tutorial on Supercell servers.</li>
+								<li>rev 1: Major connection issue due to obfuscation process has been fixed. Server should not freeze after pack 10101 anymore.</li>
+							</ul>
+						  <h5 class="text-info">New features</h5>
+							<ul>
+								<li>Players, clans and chat messages are now persistent in server memory. This feature is transparent for players, but is a prerequisite in order to save game progress in the future (ie collecting gold, improving buildings, building troops, etc.)</li>
+								<li>In memory data is now dumped to database (SQLite) on a regular basis. Server loads saved data on startup.</li>
+								<li>Added some clan features for testing purposes.</li>
+							</ul>
+							<h5 class="text-danger">Known issues</h5>
+							<ul>
+								<li>Main game actions (collecting resources, moving buildings, etc.) are still ignored by the server. However, server architecture being now ready, next versions will be focused on that part.</li>
+							</ul>
+					</div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					  Version 0.2 <small>08/07/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<h5 class="text-info">New features</h5>
+					<ul>
+						<li><strong>Pre-alpha version, not meant to be played</strong></li>
+						<li>Added clan main processes to server</li>
+						<li>Added goblin PvE main processes to server</li>
+						<li>Added player creation process to server</li>
+						<li>Added some clan features</li>
+					</ul>
+				  <h5 class="text-danger">Known issues</h5>
+					<ul>
+						<li>Data is not saved</li>
+						<li>PvP is not enabled</li>
+					</ul>
+					</div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					  Version 0.1 <small>08/04/2014</small>
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<h5 class="text-info">New features</h5>
+						<ul>
+							<li><strong>Pre-alpha version, not meant to be played</strong></li>
+							<li>Multiplayer support enabled</li>
+							<li>General chat enabled</li>
+						</ul>
+					  <h5 class="text-danger">Known issues</h5>
+						<ul>
+							<li>Data is not saved</li>
+							<li>PvP is not enabled</li>
+						</ul>
+					</div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<h3>UCS Roadmap</h3>
+			<hr>
+			<table class="table table-bordered">
+<tr><th>Feature</th><th>Implemented</th><th>Added First</th><th>Next Update</th></tr>
+<tr class="active"><td colspan="4">Global Chat</td></tr>
+<tr class="success"><td>Global Chat Messages</td><td>Yes (80%) </td><td>0.3.1.0</td><td>0.5</td></tr>
+<tr class="active"><td colspan="4">Player</td></tr>
+<tr><td>Profile</td><td>Not yet (20%) </td><td></td><td>0.7</td></tr>
+<tr><td>Ranking</td><td>Not yet (0%) </td><td></td><td>0.7</td></tr>
+<tr><td>Experience</td><td>Not yet (0%) </td><td></td><td>0.7</td></tr>
+<tr><td>Level</td><td>Not yet (0%) </td><td></td><td>0.7</td></tr>
+<tr class="success"><td>Visit other Player</td><td>Yes (100%) </td><td>0.4.3.4</td><td></td></tr>
+<tr><td>Achievements</td><td>Not yet (0%) </td><td></td><td>0.8</td></tr>
+<tr class="active"><td colspan="4">Village (Buildings, Traps, Obstacles, Decorations)</td></tr>
+<tr class="success"><td>Create & Upgrade Buildings</td><td>Yes (100%) </td><td>0.3.1.0</td><td></td></tr>
+<tr class="success"><td>Sell Buildings</td><td>Yes (80%) </td><td>0.4.3.3</td><td>0.6</td></tr>
+<tr class="success"><td>Create & Upgrade Traps</td><td>Yes (80%) </td><td>0.3.1.0</td><td>0.6</td></tr>
+<tr class="success"><td>Upgrade Heroes</td><td>Yes (70%) </td><td>0.4.3.2</td><td>0.6</td></tr>
+<tr class="success"><td>Create Decorations</td><td>Yes (100%) </td><td>0.4.3.3</td><td></td></tr>
+<tr><td>Resource Management</td><td>Not yet (30%) </td><td></td><td>0.6</td></tr>
+<tr class="success"><td>Worker Management</td><td>Yes (100%) </td><td>0.4.2.0</td><td></td></tr>
+<tr><td>Ammo Management</td><td>Not yet (0%) </td><td></td><td>0.6</td></tr>
+<tr class="success"><td>Create, Upgrade & Train Units</td><td>Yes (80%) </td><td>0.4.3.0</td><td>0.6</td></tr>
+<tr class="success"><td>Create & Upgrade Spells</td><td>Yes (80%) </td><td>0.4.3.3</td><td>0.6</td></tr>
+<tr><td>Clean Obstacles</td><td>Not yet (20%) </td><td></td><td>0.6</td></tr>
+<tr class="active"><td colspan="4">Alliances (Clans)</td></tr>
+<tr class="success"><td>Creation</td><td>Yes (40%) </td><td>0.3.1.0</td><td>0.6</td></tr>
+<tr class="success"><td>Search</td><td>Yes (80%) </td><td>0.3.1.0</td><td>0.6</td></tr>
+<tr><td>Promote & Demote</td><td>Not yet (40%) </td><td></td><td>0.6</td></tr>
+<tr><td>Invite</td><td>Not yet (40%) </td><td></td><td>0.6</td></tr>
+<tr class="success"><td>Join & Leave</td><td>Yes (50%) </td><td>0.3.1.0</td><td>0.6</td></tr>
+<tr><td>Send & Receive Messages</td><td>Not yet (70%) </td><td></td><td>0.6</td></tr>
+<tr class="success"><td>Alliance Chat Messages</td><td>Yes (50%) </td><td>0.3.1.0</td><td>0.6</td></tr>
+<tr class="active"><td colspan="4">Shop</td></tr>
+<tr class="success"><td>Resource Shop</td><td>Yes (50%) </td><td>0.3.1.0</td><td>0.7</td></tr>
+<tr><td>Gem Shop</td><td>Not yet (0%) </td><td></td><td>1.0</td></tr>
+<tr class="active"><td colspan="4">PvE (Goblins)</td></tr>
+<tr class="success"><td>Level Design</td><td>Yes (100%) </td><td>0.4.1.2</td><td></td></tr>
+<tr><td>Battle Management</td><td>Not yet (0%) </td><td></td><td>0.7</td></tr>
+<tr><td>Progression Management</td><td>Not yet (0%) </td><td></td><td>0.7</td></tr>
+<tr><td>Rewards</td><td>Not yet (0%) </td><td></td><td>0.7</td></tr>
+<tr class="active"><td colspan="4">PvP Core</td></tr>
+<tr class="success"><td>Random Search</td><td>Yes (50%) </td><td>0.5.0.0</td><td>0.5.X</td></tr>
+<tr><td>Attack specific player (UCS exclusive!)</td><td>Not yet (20%) </td><td></td><td>0.5</td></tr>
+<tr><td>Revenge</td><td>Not yet (0%) </td><td></td><td>0.5</td></tr>
+<tr><td>Battle Management</td><td>Not yet (0%) </td><td></td><td>0.5</td></tr>
+<tr><td>Rewards</td><td>Not yet (0%) </td><td></td><td>0.5</td></tr>
+<tr><td>Trophies & Ladder</td><td>Not yet (0%) </td><td></td><td>0.5</td></tr>
+<tr class="active"><td colspan="4">PvP Clan Wars</td></tr>
+<tr><td>War Management</td><td>Not yet (0%) </td><td></td><td>0.8</td></tr>
+<tr class="active"><td colspan="4">Admin</td></tr>
+<tr class="success"><td>Ban Management (UCS exclusive!)</td><td>Yes (100%) </td><td>0.5.0.0</td><td></td></tr>
+<tr><td>Add & Remove Player Resources (UCS exclusive!)</td><td>Not yet (0%) </td><td></td><td>0.5.1</td></tr>
+<tr class="success"><td>Rename Player (UCS exclusive!)</td><td>Yes (100%) </td><td>0.5.0.0</td><td></td></tr>
+<tr><td>System Messages (UCS exclusive!)</td><td>Not yet (0%) </td><td></td><td>0.5.1</td></tr>
+<tr><td>Mute / Unmute Player (UCS exclusive!)</td><td>Not yet (0%) </td><td></td><td>0.5.1</td></tr>
+<tr><td>Edit Player Village (UCS exclusive!)</td><td>Not yet (0%) </td><td></td><td>0.5.X</td></tr>
+<tr class="active"><td colspan="4">Server Core</td></tr>
+<tr class="success"><td>Logical Model</td><td>Yes (60%) </td><td>0.3.1.0</td><td>0.6</td></tr>
+<tr class="success"><td>Network</td><td>Yes (60%) </td><td>0.1.0.0</td><td>0.6</td></tr>
+<tr class="success"><td>Database Transactions</td><td>Yes (60%) </td><td>0.3.1.0</td><td>0.6</td></tr>
+<tr class="success"><td>Authentication</td><td>Yes (80%) </td><td>0.1.0.0</td><td>0.6</td></tr>
+<tr class="success"><td>Saving Capabilities</td><td>Yes (70%) </td><td>0.4.0.0</td><td>0.6</td></tr>
+<tr class="success"><td>Gameplay Settings</td><td>Yes (40%) </td><td>0.4.0.0</td><td>0.6</td></tr>
+<tr><td>Resource Monitoring</td><td>Not yet (0%) </td><td></td><td>0.6</td></tr>
+<tr class="success"><td>Custom CSV files Settings (UCS exclusive!)</td><td>Yes (100%) </td><td>0.4.0.0</td><td></td></tr>
+<tr class="success"><td>Patching</td><td>Yes (80%) </td><td>0.4.0.0</td><td>0.6</td></tr>
+</table>
+
+		</div>
+	</div>
+
+    </div> <!-- /container -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://www.ultrapowa.com/js/bootstrap.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53637443-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+  </body>
+</html>
